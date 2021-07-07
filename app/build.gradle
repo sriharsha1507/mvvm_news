@@ -24,6 +24,10 @@ android {
         buildConfigField "String", "NEWS_API_ACCESS_KEY", localProperties['apiKey']
     }
 
+    buildFeatures {
+        viewBinding true
+    }
+
     buildTypes {
         release {
             minifyEnabled false
